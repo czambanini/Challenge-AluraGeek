@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AluraGeek</title>
+</head>
+
+<body>
+    <header><img src="./assets/all-elements.png"><h1>AluraGeek</h1><img src="./assets/all-elements.png"></header>
+
+    <main>
+        <section id="products-section">
+            <h2>Meus Produtos</h2>
+    
+            <ul class="main__produtos" data-cards></ul>
+        </section>
+
+        <section id="addItem">
+            <h2>Adicionar Produto</h2>
+            <form class="addItem__form" data-form>
+                <input class="form__input" type="text" id="nome" placeholder="Nome">
+                <input class="form__input" type="number" id="preco" placeholder="Valor">
+                <input class="form__input" type="text" id="imagem" placeholder="Imagem">
+                <div class="form__buttons">
+                    <button class="form__save_button">Guardar</button>
+                    <button class="form__clean_button">Limpar</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="./assets/elem-ar.png">
+        <div class="footer_text">
+            <h4>AluraGeek</h4>
+            <p>Desenvolvido por Camila Zambanini</p>
+            <p>Oracle ONE + Alura 2024</p>
+        </div>
+        <img src="./assets/elem-ar.png">
+    </footer>
+
+    <script src="./js/mostrarCards.js" type="module"></script>
+    <script src="./js/criarCard.js" type="module"></script>
+</body>
+</html>

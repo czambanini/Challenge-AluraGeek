@@ -1,0 +1,70 @@
+{
+  "projetos": [
+    {
+      "nome": "Wolf Hook",
+      "preco": 5,
+      "imagem": "./assets/wolfhook.png"
+    },
+    {
+      "nome": "Rainbow Rose",
+      "preco": 25,
+      "imagem": "./assets/rainbow-rose.png"
+    },
+    {
+      "nome": "Pêssego Zaytun",
+      "preco": 15,
+      "imagem": "./assets/pessego.png",
+      "id": "29aa"
+    },
+    {
+      "nome": "Lirio de Vidro",
+      "preco": 25,
+      "imagem": "./assets/lirio-de-vidro.png",
+      "id": "b793"
+    },
+    {
+      "nome": "Flor Romaritime",
+      "preco": 20,
+      "imagem": "./assets/romaritime-flower.png"
+    },
+    {
+      "nome": "Dendrobio",
+      "preco": 15,
+      "imagem": "./assets/dendrobium.png"
+    },
+    {
+      "nome": "Flor do Luto",
+      "preco": 10,
+      "imagem": "./assets/flor-do-luto.png"
+    },
+    {
+      "nome": "Lotus Kalpalata",
+      "preco": 30,
+      "imagem": "./assets/lotus-kalpalata.png"
+    },
+    {
+      "nome": "Flor Doce",
+      "preco": 5,
+      "imagem": "./assets/flor-doce.png",
+      "id": "34f7"
+    },
+    {
+      "nome": "Fruta Harra",
+      "preco": 15,
+      "imagem": "./assets/fruta-harra.png",
+      "id": "00f9"
+    },
+    {
+      "nome": "Rosa de Sumeru",
+      "preco": 15,
+      "imagem": "./assets/rosa-de-sumeru.png",
+      "id": "ed57"
+    },
+    {
+      "id": "5308",
+      "nome": "Valberry",
+      "preco": "5",
+      "imagem": "https://i.pinimg.com/originals/6c/5e/af/6c5eafbd5fa390500b0a1032c5df3006.png"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-de-fundo: #dde7e9;
+    --cor-de-titulo: #41959e;;
+    --cor-da-fonte: #5e5e5e;
+
+    --cor-cinza: #dadada;
+    --cor-cinza-escuro: #c5c5c5;
+
+    --fonte-titulos: "Overpass", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-da-fonte);
+    background-color: var(--cor-de-fundo);
+}
+
+h1 {
+    font-family: var(--fonte-titulos);
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    font-family: var(--fonte-titulos);
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--cor-de-titulo);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: var(--fonte-titulos);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+p {
+    margin: 10px 0 0 0;
+}
+
+/* Header */
+
+header {
+    background-color: #9ec5c7;
+    height: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    height: 45px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    height: 85vh;
+}
+
+/* Produtos */
+
+#products-section {
+    flex-grow: 2;
+    max-width: 65%;
+    max-height: 100%;
+    text-align: center;
+    padding: 40px 0 50px;
+}
+
+.main__produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 10% 0;
+    padding: 20px;
+    max-height: 85%;
+    overflow: auto;
+}
+
+.main__produtos__card{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 150px;
+    max-width: 250px;
+    border: 1px solid var(--cor-cinza-escuro);
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+}
+
+.main__produtos__card p{
+    text-align: left;
+    margin-left: 17px;
+}
+
+.card_image {
+    margin: 12px;
+    border: 1px solid var(--cor-cinza-escuro);
+}
+
+.card_price {
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 20px;
+    }
+    
+.card_trash {
+    position: absolute;
+    width: 15px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.card_trash:hover {
+    cursor: pointer;
+}
+
+/* Formulario  */
+
+#add-item-section {
+    flex-grow: 1;
+}
+
+#addItem {
+    text-align: center;
+    width: 30%;
+    max-width: 400px;
+    padding-top: 40px;
+}
+
+.addItem__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 10% 0;
+}
+
+.addItem__form input {
+    height: 30px;
+    border: 1px solid var(--cor-cinza-escuro);
+    border-radius: 10px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    font-family: var(--fonte-titulos);
+}
+
+.addItem__form input:focus {
+    outline: none;
+}
+
+.form__buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.addItem__form button {
+    height: 30px;
+    width: 45%;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-family: var(--fonte-titulos);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form__save_button {
+    background-color: #60cca3;
+    border: 0;
+    color: #d9f7ec;
+}
+
+.form__clean_button {
+    border: 1px solid var(--cor-cinza-escuro);
+    color: #5e5e5e;
+}
+
+/* Footer */
+
+footer {
+    background-color: #9ec5c7;
+    height: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img{
+    height: 45px;
+}
+
+.footer_text {
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+    color: white;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+@media (max-width: 800px) {
+    header img{
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        overflow: auto;
+        align-items: center;
+    }
+
+    #products-section {
+        flex-grow: 1;
+        max-width: 100%;
+        max-height: auto;
+    }
+    
+    .main__produtos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0 10% 0;
+        padding: 20px;
+        max-height: 85%;
+        overflow: auto;
+    }
+
+    #addItem {
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+        padding-top: 40px;
+    }
+
+}
